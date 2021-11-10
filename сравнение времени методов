@@ -1,0 +1,21 @@
+метод			время кастомного, мс		время оригинала, мс
+add(int i)		4				4 
+size()			3				2
+isEmpty()		3				3
+contains(Obj o) 	47				47
+toArray()		248				37
+remove(int i)		1447				2
+clear()		2				2
+get()			0				1
+set(int i, Obj o)	2				2
+add(int i, Obj o)	1555				475
+indexOf(Obj o)		751				919
+lastIndexOf(Obj o)	753				1048
+subList(int i, int i1)	49				6
+retainAll(Coll coll)	4609				485
+removeAll(Coll coll)	4516				3161
+containsAll(Coll coll)	122				124
+toString()		191				344
+
+Методы повторялись некоторое количество раз, количество повторений зависело от времени одного раза.
+
