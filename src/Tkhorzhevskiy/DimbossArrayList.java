@@ -4,24 +4,7 @@ import java.util.*;
 
 
 public class DimbossArrayList<E> implements List<E> {
-    public static  void main(String [] args){
-        DimbossArrayList<Integer> testList=new DimbossArrayList<>();
-        testList.add(2);
-        testList.add(2);
-        testList.add(8);
-        System.out.println(testList.get(0));
-        System.out.println(testList.size());
-        System.out.println(testList.isEmpty());
-        System.out.println(testList.contains(7));
-        System.out.println(testList.remove(2));
-        System.out.println(testList.contains(1));
-        testList.set(1,6);
-        System.out.println(testList.indexOf(6));
-        Object[] arr=testList.toArray();
-        System.out.println(Arrays.toString(arr));
-    }
-
-
+    
     private E[] listArr;
     private int size;
     private static final int DEFAULT_SIZE=10;
@@ -203,5 +186,24 @@ public class DimbossArrayList<E> implements List<E> {
     public List<E> subList(int fromIndex, int toIndex) {
         return null;
     }
+    
+    public static  void main(String [] args){
+        DimbossArrayList<Integer> testList=new DimbossArrayList<>();
+        testList.add(2);
+        testList.add(2);
+        testList.add(8);
+        System.out.println(testList.get(0));
+        System.out.println(testList.size());
+        System.out.println(testList.isEmpty());
+        System.out.println(testList.contains(7));
+        System.out.println(testList.remove(2));
+        System.out.println(testList.contains(1));
+        testList.set(1,6);
+        System.out.println(testList.indexOf(6));
+        Object[] arr=testList.toArray();
+        System.out.println(Arrays.toString(arr));
+    }
+
+
 
 }
